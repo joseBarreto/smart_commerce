@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="smart_commerce" id="99B07136-3FED-17F0-072D-E5582EC5CF56" version="3.5">
+<createdBy>josed</createdBy>
+<createdTime>2021-02-24 01:00:13 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>99B07136-3FED-17F0-072D-E5582EC5CF56</designId>
+</OSDM_Design>

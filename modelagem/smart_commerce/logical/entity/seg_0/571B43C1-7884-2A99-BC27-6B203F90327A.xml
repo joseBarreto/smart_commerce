@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="571B43C1-7884-2A99-BC27-6B203F90327A" name="T_PERFIL">
+<createdBy>josed</createdBy>
+<createdTime>2021-02-24 01:37:47 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<engineerTo>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_perfil" id="F42BD800-8C2E-1E49-64C4-8948FCC7C49F">
+<createdBy>josed</createdBy>
+<createdTime>2021-02-24 01:37:54 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<engineerTo>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="23D3FC92-1BC6-DD60-419B-826EB6FF4334">
+<createdBy>josed</createdBy>
+<createdTime>2021-02-24 01:38:07 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<engineerTo>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="28854B04-12A8-7561-E487-7787D1909205">
+<createdBy>josed</createdBy>
+<createdTime>2021-02-24 01:39:14 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<engineerTo>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="7C27B836-0B35-F0DD-EE69-28CF90D96DE1">
+<createdBy>josed</createdBy>
+<createdTime>2021-02-24 01:39:30 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<engineerTo>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_cadastro" id="5B9AFB59-3E86-F721-2EDC-24F3BE0D92F4">
+<createdBy>josed</createdBy>
+<createdTime>2021-02-24 02:32:50 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<engineerTo>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="76BF4CD8-35ED-5572-5B22-33BF0A15F557" name="T_PERFIL PK">
+<createdBy>josed</createdBy>
+<createdTime>2021-02-24 01:38:02 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<engineerTo>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F42BD800-8C2E-1E49-64C4-8948FCC7C49F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
