@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C0A828F3-2CB4-68B9-0618-CAD5997891B0" containerWithKeyObject="8C58A5BE-96F2-817F-0AD3-4126D4B108EA" localFKIndex="0B524789-E289-5826-AD5D-C18B8B32C706" name="T_LOCAL_T_LOCAL_SEGMENTO_FK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>D8D481BE-D050-D599-0BE9-3FF4D28B7121</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<referredTableLongName>T_LOCAL_SEGMENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>73A9DC52-88B3-3C09-5277-E2FFAC840EE7</referredTableID>
+<keyObject>BA080C15-32C4-F511-AB70-9FDB0F48AE01</keyObject>
+<referredKeyID>BA080C15-32C4-F511-AB70-9FDB0F48AE01</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_local_segmento</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

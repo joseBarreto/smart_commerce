@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="280B98D4-9F5A-67B8-5CA3-AD509A4CAF87" name="T_USUARIO_PERFIL">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>8F75C001-B503-6630-5959-FF946ACB50AC</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario_perfil" id="C5E82D31-05E7-A580-F949-F9F215CD3ED0">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>CCD1B572-4065-A3CF-B3D6-0511CCED16F2</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USUARIO_id_usuario" id="A1C6E98A-7C40-81F5-6429-53ED01917B03">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>70284D84-D8E9-DA83-CA53-76CB595B5EAF</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8F2FE47-3219-FF6F-ECA9-8C8FCA46B942" referredColumn="FE870F56-3DCD-AC06-D9A4-1E4B54DCB8C4"/>
+</associations>
+</Column>
+<Column name="data_cadastro" id="8A1A500C-6DD1-3768-0CCD-CE358E243672">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>BA68E627-4905-DE12-B99E-E2D848B3A316</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="860726BE-B99C-B35C-B937-7758B327D3F2" name="T_USUARIO_PERFIL_PK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>98C80B6A-F90D-400B-0B18-1660057AF1A1</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5E82D31-05E7-A580-F949-F9F215CD3ED0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF7C8150-B0FA-3E36-4C10-6E76E7900D47" name="T_USUARIO_PERFIL_T_USUARIO_FK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>35DC37D3-4F21-2F5D-D402-58FA76C751D7</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1C6E98A-7C40-81F5-6429-53ED01917B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

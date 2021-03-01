@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52F654C9-B4D3-EA60-EF59-D185BFACA121" name="T_LOGIN">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>06FACAA5-CDD4-39F5-3940-B44336A8E875</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_login" id="E1259A2B-8739-79A2-D8FD-8C5891F015FA">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>FBF172FE-D23C-553C-1216-1360B70F96B7</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USUARIO_id_usuario" id="AE75E144-BDCE-F8AE-D839-13035BFA572D">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>2B7FF8EE-AE04-0F57-E241-349BDACE6554</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E36DF872-CDC9-6991-FB29-66A3D7DF2917" referredColumn="FE870F56-3DCD-AC06-D9A4-1E4B54DCB8C4"/>
+</associations>
+</Column>
+<Column name="data_ultimo_acesso" id="C0C8E729-3FB2-4FAD-D81C-E2487913C785">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>A1C26605-8BFC-897E-F2D0-5A0789D09439</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="7DD2F03C-AC37-C62F-8DF0-A82E13681C02">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>426031FC-6FC0-39AE-4F3B-75EC9C470CDB</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha" id="A87016CB-5444-74F1-EB48-228E7B1D5B37">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>B542AB7F-EF3B-95E2-8CBE-58539051A245</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D88A734-5898-5E90-5E66-060EF7F49BBC" name="T_LOGIN_PK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>8FFD7412-8959-0248-8461-CB458D682870</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1259A2B-8739-79A2-D8FD-8C5891F015FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88866465-8CAB-F4EB-4039-75720DD389F3" name="T_LOGIN__IDX">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5ADF2A73-8FE8-D4E8-1C11-90465F2AB201</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AE75E144-BDCE-F8AE-D839-13035BFA572D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24CA52F0-D713-BB72-4E09-49AD92D4A78C" name="T_LOGIN_T_USUARIO_FK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>5ADF2A73-8FE8-D4E8-1C11-90465F2AB201</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE75E144-BDCE-F8AE-D839-13035BFA572D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

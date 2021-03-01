@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E192AAC7-167D-8E51-1719-968C639831A4" name="T_LOCAL_LOCAL_PRODUTO">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>A84D106B-69DC-62D8-A212-17A0A45EB9DB</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_local_local_produto" id="6B8E7DB2-5497-A98A-A629-775B67B4ABD4">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>2DEFFB8A-0D3A-0E85-2DC2-4BAD4FBC5F0B</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_LOCAL_id_local" id="A9DF8C5F-3E3C-D080-DB93-015D8DF1D542">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>631EAE95-A9E2-70CE-346F-DFA94D21117F</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B86D63B-8FDA-10DD-5A86-5F9B9A909B92" referredColumn="46F40113-76A8-EF14-DC3B-921329AF7824"/>
+</associations>
+</Column>
+<Column name="T_LOCAL_PRODUTO_id_local_produto" id="F99AA51E-349D-7D09-EE06-D817AB094CED">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>D9B414F1-2621-FEC9-D2F4-0637513A0820</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BFF99A6-DD0E-FB2B-3B37-6D9011C80AC9" referredColumn="AF718D8B-1F09-1BD0-F3F4-2AD14ED840E5"/>
+</associations>
+</Column>
+<Column name="data_cadastro" id="9544F60F-2ABF-401F-7844-3AE4C9195B0C">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>CC8F750E-5D7E-FACA-B44D-3BA64C40B6DD</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5F912C2-F9CD-9F19-47B3-AE4D38DFD73F" name="T_LOCAL_LOCAL_PRODUTO_PK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>9416C345-6532-8898-D96F-417757060500</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="3B19821E-F059-4178-1657-158433A668E2" name="T_LOCAL_LOCAL_PRODUTO_T_LOCAL_FK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>ADFD899A-47FD-628D-69D5-B2EC54C851CF</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9DF8C5F-3E3C-D080-DB93-015D8DF1D542"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20E3813E-E1E3-5C54-DB49-B9F5A59519E4" name="T_LOCAL_LOCAL_PRODUTO_T_LOCAL_PRODUTO_FK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<generatorID>3CF1A1FA-9B35-DD4A-5289-14667252B7B2</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F99AA51E-349D-7D09-EE06-D817AB094CED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
