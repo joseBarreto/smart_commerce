@@ -1,0 +1,50 @@
+Inicial
+- Header
+ - Foto do usuário -> Menu de configurações
+ - Nível até o momento -> Resumo das últimas votações envolvidas
+ - Frase de Saudação com nome
+ - Cards para sugestões de votações
+ - Ranking das mais próximas
+ - Andamento das votações envolvidas
+ - Sugestão de produtos
+
+- Footer
+ - Menu Fixo com opções
+  - Inicial
+  - Pesquisar
+  - Mapa
+  - (Caso empresa: resumo de suas votações)
+
+Pesquisas
+ - Cards com sugestões por categorias
+ - Categorias
+ - Recomendção de empresas pequenas
+ - Votações mais importantes nas regiões
+ - Produtos mais requisitados
+
+Página empresa
+ - Nome centralizado da empresa
+ - Foto do logotipo no centro
+ - Identificador para empresa novata ou conhecida
+ - Descrição breve da empresa
+ - Botão votar (com uma quantidade de votações dentro)
+ - Sugestões de produtos em uma lista expandível
+ - Lista horizontal com categorias
+ - Avaliações dos usuários
+ - Comentários
+
+Votação
+ - Cards Estilo Tinder ou Jogo Reigns
+ - Opção rejeitar
+ - Opção Conhecer
+ - Opção Votar -> Não registrar votação -> Passar para próximo
+ - Possível pular ou voltar em votos
+
+Tela Usuário
+ - Foto de usuário no centro -> Alterar Foto Usuário
+ - Lista contendo
+  - Visualizar últimas votações
+  - Alterar Dados
+  - Opções de privacidade
+  - Torne-se uma empresa
+  - (Caso empresa: Torne-se Pro)
