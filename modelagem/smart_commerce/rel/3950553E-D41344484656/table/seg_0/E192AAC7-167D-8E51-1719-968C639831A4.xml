@@ -13,10 +13,9 @@
 <createdTime>2021-03-01 02:51:26 UTC</createdTime>
 <generatorID>2DEFFB8A-0D3A-0E85-2DC2-4BAD4FBC5F0B</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -27,7 +26,7 @@
 <ownerDesignName>smart_commerce</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -42,7 +41,7 @@
 <ownerDesignName>smart_commerce</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -72,6 +71,9 @@
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B8E7DB2-5497-A98A-A629-775B67B4ABD4"/>
+</indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="3B19821E-F059-4178-1657-158433A668E2" name="T_LOCAL_LOCAL_PRODUTO_T_LOCAL_FK">
 <createdBy>josed</createdBy>
