@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8175DEAD-6BBE-58D1-D0DF-B853DB41318F" name="T_USUARIO">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>9AC521DC-C98E-8F3B-439D-75F448039F53</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="577E2410-0EF2-4DAA-864C-7D817A0FB940">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>AA6A1EDC-F356-39B0-6D5F-6EAF66F8FE76</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="F76A30B2-0870-91DB-BABB-71B26B26035C">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>B63BB917-CBFB-AC25-CCCD-E2B254CEC1BF</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sobrenome" id="EA87A9DF-DA63-36CC-3EDE-DC15F88CA2E2">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>091A7B40-DEB7-2A72-A707-C0DD6974843B</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_cadastro" id="D06AF4C3-466A-D482-A1A9-D91D76D2816C">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>C085F5A3-34C3-9CCF-3A60-8686ED04BC1F</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="AE00C57D-1F14-C6E4-0F63-EA7AF4F9830A">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>22699AB4-CA9E-0DDC-AF5D-C89F35296E58</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F44942A6-0146-3001-6C26-D33563312ED4" name="T_USUARIO_PK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>CEE62F78-BFDC-3FF9-0B1D-C7A304575887</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="577E2410-0EF2-4DAA-864C-7D817A0FB940"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

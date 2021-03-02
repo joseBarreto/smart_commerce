@@ -1,0 +1,289 @@
+-- Gerado por Oracle SQL Developer Data Modeler 19.4.0.350.1424
+--   em:        2021-03-01 23:52:15 BRT
+--   site:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+
+
+CREATE TABLE t_local (
+    id_local                INTEGER NOT NULL,
+    t_segmento_id_segmento  INTEGER NOT NULL,
+    t_usuario_id_usuario    INTEGER NOT NULL,
+    nome                    VARCHAR2(50),
+    cep                     INTEGER,
+    latitude                NUMBER,
+    longitude               NUMBER,
+    logadouro               VARCHAR2(100),
+    numero                  INTEGER,
+    bairro                  CHAR(100),
+    cidade                  CHAR(100),
+    uf                      CHAR(2),
+    complemento             VARCHAR2(100),
+    data_cadastro           DATE
+);
+
+ALTER TABLE t_local ADD CONSTRAINT t_local_pk PRIMARY KEY ( id_local );
+
+CREATE TABLE t_local_produto (
+    id_local_produto      INTEGER NOT NULL,
+    t_local_id_local      INTEGER NOT NULL,
+    t_produto_id_produto  INTEGER NOT NULL,
+    data_cadastro         DATE
+);
+
+ALTER TABLE t_local_produto ADD CONSTRAINT t_local_produto_pk PRIMARY KEY ( id_local_produto );
+
+CREATE TABLE t_login (
+    id_login              INTEGER NOT NULL,
+    t_usuario_id_usuario  INTEGER NOT NULL,
+    data_ultimo_acesso    DATE,
+    email                 CHAR(100),
+    senha                 CHAR(32)
+);
+
+CREATE UNIQUE INDEX t_login__idx ON
+    t_login (
+        t_usuario_id_usuario
+    ASC );
+
+ALTER TABLE t_login ADD CONSTRAINT t_login_pk PRIMARY KEY ( id_login );
+
+CREATE TABLE t_perfil (
+    id_perfil      INTEGER NOT NULL,
+    codigo         INTEGER,
+    nome           VARCHAR2(100),
+    descricao      VARCHAR2(500),
+    data_cadastro  DATE
+);
+
+ALTER TABLE t_perfil ADD CONSTRAINT t_perfil_pk PRIMARY KEY ( id_perfil );
+
+CREATE TABLE t_produto (
+    id_produto      INTEGER NOT NULL,
+    nome            VARCHAR2(150),
+    descricao       VARCHAR2(500),
+    preco_estimado  NUMBER,
+    data_cadastro   DATE,
+    codigo          INTEGER
+);
+
+ALTER TABLE t_produto ADD CONSTRAINT t_produto_pk PRIMARY KEY ( id_produto );
+
+CREATE TABLE t_segmento (
+    id_segmento    INTEGER NOT NULL,
+    codigo         INTEGER,
+    nome           CHAR(100),
+    descricao      VARCHAR2(200),
+    data_cadastro  DATE
+);
+
+ALTER TABLE t_segmento ADD CONSTRAINT t_segmento_pk PRIMARY KEY ( id_segmento );
+
+CREATE TABLE t_usuario (
+    id_usuario     INTEGER NOT NULL,
+    nome           VARCHAR2(30),
+    sobrenome      VARCHAR2(60),
+    data_cadastro  DATE,
+    status         CHAR(1)
+);
+
+ALTER TABLE t_usuario ADD CONSTRAINT t_usuario_pk PRIMARY KEY ( id_usuario );
+
+CREATE TABLE t_usuario_perfil (
+    id_usuario_perfil     INTEGER NOT NULL,
+    t_perfil_id_perfil    INTEGER NOT NULL,
+    t_usuario_id_usuario  INTEGER NOT NULL,
+    data_cadastro         DATE
+);
+
+ALTER TABLE t_usuario_perfil ADD CONSTRAINT t_usuario_perfil_pk PRIMARY KEY ( id_usuario_perfil );
+
+CREATE TABLE t_votacao (
+    id_votacao            INTEGER NOT NULL,
+    t_usuario_id_usuario  INTEGER NOT NULL,
+    t_local_id_local      INTEGER NOT NULL,
+    voto                  CHAR(1),
+    data_cadastro         DATE
+);
+
+ALTER TABLE t_votacao ADD CONSTRAINT t_votacao_pk PRIMARY KEY ( id_votacao );
+
+ALTER TABLE t_local_produto
+    ADD CONSTRAINT t_local_produto_t_local_fk FOREIGN KEY ( t_local_id_local )
+        REFERENCES t_local ( id_local );
+
+ALTER TABLE t_local_produto
+    ADD CONSTRAINT t_local_produto_t_produto_fk FOREIGN KEY ( t_produto_id_produto )
+        REFERENCES t_produto ( id_produto );
+
+ALTER TABLE t_local
+    ADD CONSTRAINT t_local_t_segmento_fk FOREIGN KEY ( t_segmento_id_segmento )
+        REFERENCES t_segmento ( id_segmento );
+
+ALTER TABLE t_local
+    ADD CONSTRAINT t_local_t_usuario_fk FOREIGN KEY ( t_usuario_id_usuario )
+        REFERENCES t_usuario ( id_usuario );
+
+ALTER TABLE t_login
+    ADD CONSTRAINT t_login_t_usuario_fk FOREIGN KEY ( t_usuario_id_usuario )
+        REFERENCES t_usuario ( id_usuario );
+
+ALTER TABLE t_usuario_perfil
+    ADD CONSTRAINT t_usuario_perfil_t_perfil_fk FOREIGN KEY ( t_perfil_id_perfil )
+        REFERENCES t_perfil ( id_perfil );
+
+ALTER TABLE t_usuario_perfil
+    ADD CONSTRAINT t_usuario_perfil_t_usuario_fk FOREIGN KEY ( t_usuario_id_usuario )
+        REFERENCES t_usuario ( id_usuario );
+
+ALTER TABLE t_votacao
+    ADD CONSTRAINT t_votacao_t_local_fk FOREIGN KEY ( t_local_id_local )
+        REFERENCES t_local ( id_local );
+
+ALTER TABLE t_votacao
+    ADD CONSTRAINT t_votacao_t_usuario_fk FOREIGN KEY ( t_usuario_id_usuario )
+        REFERENCES t_usuario ( id_usuario );
+
+CREATE SEQUENCE t_local_id_local_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_local_id_local_trg BEFORE
+    INSERT ON t_local
+    FOR EACH ROW
+    WHEN ( new.id_local IS NULL )
+BEGIN
+    :new.id_local := t_local_id_local_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE t_local_produto_id_local_produ START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_local_produto_id_local_produ BEFORE
+    INSERT ON t_local_produto
+    FOR EACH ROW
+    WHEN ( new.id_local_produto IS NULL )
+BEGIN
+    :new.id_local_produto := t_local_produto_id_local_produ.nextval;
+END;
+/
+
+CREATE SEQUENCE t_login_id_login_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_login_id_login_trg BEFORE
+    INSERT ON t_login
+    FOR EACH ROW
+    WHEN ( new.id_login IS NULL )
+BEGIN
+    :new.id_login := t_login_id_login_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE t_perfil_id_perfil_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_perfil_id_perfil_trg BEFORE
+    INSERT ON t_perfil
+    FOR EACH ROW
+    WHEN ( new.id_perfil IS NULL )
+BEGIN
+    :new.id_perfil := t_perfil_id_perfil_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE t_produto_id_produto_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_produto_id_produto_trg BEFORE
+    INSERT ON t_produto
+    FOR EACH ROW
+    WHEN ( new.id_produto IS NULL )
+BEGIN
+    :new.id_produto := t_produto_id_produto_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE t_segmento_id_segmento_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_segmento_id_segmento_trg BEFORE
+    INSERT ON t_segmento
+    FOR EACH ROW
+    WHEN ( new.id_segmento IS NULL )
+BEGIN
+    :new.id_segmento := t_segmento_id_segmento_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE t_usuario_id_usuario_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_usuario_id_usuario_trg BEFORE
+    INSERT ON t_usuario
+    FOR EACH ROW
+    WHEN ( new.id_usuario IS NULL )
+BEGIN
+    :new.id_usuario := t_usuario_id_usuario_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE t_usuario_perfil_id_usuario_pe START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_usuario_perfil_id_usuario_pe BEFORE
+    INSERT ON t_usuario_perfil
+    FOR EACH ROW
+    WHEN ( new.id_usuario_perfil IS NULL )
+BEGIN
+    :new.id_usuario_perfil := t_usuario_perfil_id_usuario_pe.nextval;
+END;
+/
+
+CREATE SEQUENCE t_votacao_id_votacao_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER t_votacao_id_votacao_trg BEFORE
+    INSERT ON t_votacao
+    FOR EACH ROW
+    WHEN ( new.id_votacao IS NULL )
+BEGIN
+    :new.id_votacao := t_votacao_id_votacao_seq.nextval;
+END;
+/
+
+
+
+-- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                             9
+-- CREATE INDEX                             1
+-- ALTER TABLE                             18
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           9
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          9
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE MATERIALIZED VIEW LOG             0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

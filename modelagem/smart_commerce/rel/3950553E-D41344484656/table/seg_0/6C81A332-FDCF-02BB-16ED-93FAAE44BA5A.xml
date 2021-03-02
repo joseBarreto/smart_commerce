@@ -1,27 +1,29 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C1D02E4-59B3-DC6A-7F8D-0864F66BEE5E" name="T_LOCAL_VOTACAO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C81A332-FDCF-02BB-16ED-93FAAE44BA5A" name="T_VOTACAO">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>9D8B583B-CD55-8C0F-FCA6-D6333021410C</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_local_votacao" id="11FDBB0E-1AB5-A162-0210-BE77DA5E0474">
+<Column name="id_votacao" id="5D2611BE-88B3-F657-8634-A108FF933F09">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>00381D77-905A-9806-AEF7-0ACD31EAFABF</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="T_USUARIO_id_usuario" id="48CB1455-D167-3261-66A9-0D9650D85E1A">
+<Column name="T_USUARIO_id_usuario" id="53FDE3FF-BEEB-AD08-B49A-EB21B49F51B9">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>06733A5F-05AF-92FC-9849-25A03663AA97</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,12 +33,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="5E84E027-916B-2D15-960F-F1BAC512DB0C" referredColumn="FE870F56-3DCD-AC06-D9A4-1E4B54DCB8C4"/>
+<colAssociation fkAssociation="C9B85764-0670-6AC4-B774-E41562997B8C" referredColumn="577E2410-0EF2-4DAA-864C-7D817A0FB940"/>
 </associations>
 </Column>
-<Column name="T_LOCAL_id_local" id="ADE64B48-E75D-A9C7-269A-8BD2AA0BFAFB">
+<Column name="T_LOCAL_id_local" id="2927D248-5569-5EC7-C80F-099B9EBED8B4">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>873EC6E4-0EF9-C27B-2CA1-821ACC9E091D</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -46,12 +48,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="1BE76F5B-07FD-C6EF-E1CD-19FC29A24A0F" referredColumn="46F40113-76A8-EF14-DC3B-921329AF7824"/>
+<colAssociation fkAssociation="B6094DB2-AC65-DD20-86A0-269D7B1B136C" referredColumn="9DA9D5F5-0EF7-48C6-EC00-335C330F5E77"/>
 </associations>
 </Column>
-<Column name="voto" id="ADBC783E-070D-3C4F-283D-6EDB2A33D02C">
+<Column name="voto" id="38B14498-6A7B-A584-A7FA-22A536E46F5B">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>218EE942-4A14-BEF3-BD29-C1F87D7EDBE2</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -62,9 +64,9 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="data_cadastro" id="F0782942-452A-1F05-C69E-93753C036594">
+<Column name="data_cadastro" id="40357CAE-8356-51C2-223E-5525628FF4E1">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>64934795-BCDB-3702-3236-9DD49EF6B4B8</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -76,38 +78,38 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="047A9ABE-581A-467D-924E-501A8C490493" name="T_LOCAL_VOTACAO_PK">
+<ind_PK_UK id="8468B2E1-9490-451F-1DE1-A7F884306328" name="T_VOTACAO_PK">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>EB159727-ED46-0010-8267-EBB9F99896F9</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="11FDBB0E-1AB5-A162-0210-BE77DA5E0474"/>
+<colUsage columnID="5D2611BE-88B3-F657-8634-A108FF933F09"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5FB203BB-A3A8-83C2-96F4-F6BA6DC7349F" name="T_LOCAL_VOTACAO_T_USUARIO_FK">
+<ind_PK_UK id="B7794AD6-1A97-F4E5-AF8C-8F6BA5166E92" name="T_VOTACAO_T_USUARIO_FK">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>6D573F43-9E42-C8D4-953D-FA7B415F209A</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="48CB1455-D167-3261-66A9-0D9650D85E1A"/>
+<colUsage columnID="53FDE3FF-BEEB-AD08-B49A-EB21B49F51B9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="677261CD-3482-1BA6-11EA-C4797DEAEC1A" name="T_LOCAL_VOTACAO_T_LOCAL_FK">
+<ind_PK_UK id="19321D7E-D9B9-4557-87DC-10EFF92A33C8" name="T_VOTACAO_T_LOCAL_FK">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>ACB3C3C4-1466-C669-E10A-2A086E3C5187</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="ADE64B48-E75D-A9C7-269A-8BD2AA0BFAFB"/>
+<colUsage columnID="2927D248-5569-5EC7-C80F-099B9EBED8B4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

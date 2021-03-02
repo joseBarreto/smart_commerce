@@ -24,7 +24,21 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_perfil" id="807D077F-7C1D-9577-1093-D077FC635B57">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:04:48 UTC</createdTime>
+<generatorID>6F589623-6160-BE8C-357E-DCC6B553EF7C</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<engineerTo>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+</engineerTo>
+<referedAttribute>F42BD800-8C2E-1E49-64C4-8948FCC7C49F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_usuario" id="70284D84-D8E9-DA83-CA53-76CB595B5EAF">
@@ -38,7 +52,7 @@
 <referedAttribute>AA6A1EDC-F356-39B0-6D5F-6EAF66F8FE76</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_cadastro" id="BA68E627-4905-DE12-B99E-E2D848B3A316">
@@ -60,8 +74,9 @@
 <createdBy>josed</createdBy>
 <createdTime>2021-02-24 01:35:36 UTC</createdTime>
 <ownerDesignName>smart_commerce</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

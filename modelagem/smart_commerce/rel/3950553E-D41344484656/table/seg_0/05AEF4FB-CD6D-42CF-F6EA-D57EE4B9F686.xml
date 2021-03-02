@@ -1,27 +1,29 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4A4413C-3EF0-29F0-4982-253FC12B0841" name="T_LOCAL_PRODUTO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="05AEF4FB-CD6D-42CF-F6EA-D57EE4B9F686" name="T_PRODUTO">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>30203CA4-4C86-1E08-C2F6-B97F7299A1A4</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_local_produto" id="AF718D8B-1F09-1BD0-F3F4-2AD14ED840E5">
+<Column name="id_produto" id="DB425955-D036-9416-4364-9E3B8782B85E">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>B8EF8E95-2F8A-69EB-F899-C9235D16015E</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nome" id="D825FA27-47F5-1A2C-6061-75E9D314C92C">
+<Column name="nome" id="FAF05662-44E6-0245-E76A-FC08D3889449">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>8CF11022-E987-51EF-8F82-2FC340178F90</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -32,9 +34,9 @@
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="descricao" id="EFFA8537-EB98-0058-AD90-37915574A58B">
+<Column name="descricao" id="17143EE4-884D-2089-D6C7-D7AEFFC9F81F">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>EDAE3DD0-E327-E594-AE23-9F8E628D6ED6</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -45,22 +47,21 @@
 <ownDataTypeParameters>500,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="preco_estimado" id="BCA4BFEF-B813-3E69-0FA7-255BCB265131">
+<Column name="preco_estimado" id="E0329632-7131-9F87-BBB2-2AE52534AB99">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>C26819A9-ECDB-C3D9-66C9-82BD88536B3D</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="data_cadastro" id="C89005F3-01FC-C8E1-A7F7-AFC3EEEE3601">
+<Column name="data_cadastro" id="3826027D-DCC1-5434-1D04-D12A34BE4241">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>B89DA64A-230B-3804-27B9-522C7E3C6E2D</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -70,9 +71,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="codigo" id="206A253A-BC5D-73F6-E5B1-494EA9736655">
+<Column name="codigo" id="37658973-BAF0-D245-DF1B-66E58FBBC11A">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>7AE90789-F241-5A94-4FA0-E025B23C5D4D</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -84,16 +85,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="DBB66A95-BE46-5EE0-6E70-CB2AE9A0E5C8" name="T_LOCAL_PRODUTO_PK">
+<ind_PK_UK id="CA70E06B-6DA4-7F80-39CC-C796E927D51A" name="T_PRODUTO_PK">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
 <generatorID>263B11D2-4D1F-6930-9C08-AEF3F7E34C64</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="AF718D8B-1F09-1BD0-F3F4-2AD14ED840E5"/>
+<colUsage columnID="DB425955-D036-9416-4364-9E3B8782B85E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

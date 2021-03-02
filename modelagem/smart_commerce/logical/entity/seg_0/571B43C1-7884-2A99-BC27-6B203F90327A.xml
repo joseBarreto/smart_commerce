@@ -24,7 +24,7 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="codigo" id="23D3FC92-1BC6-DD60-419B-826EB6FF4334">
@@ -50,7 +50,7 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
@@ -65,7 +65,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_cadastro" id="5B9AFB59-3E86-F721-2EDC-24F3BE0D92F4">
 <createdBy>josed</createdBy>
@@ -86,8 +87,9 @@
 <createdBy>josed</createdBy>
 <createdTime>2021-02-24 01:38:02 UTC</createdTime>
 <ownerDesignName>smart_commerce</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

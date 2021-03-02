@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="78C26024-422C-ECDB-4334-6AD731E07C1B" containerWithKeyObject="9CEC6FD0-202C-F882-8CE0-08F584CA7ABD" localFKIndex="3B453B28-96E9-EAE2-2BD6-342CC39922B0" name="T_USUARIO_PERFIL_T_PERFIL_FK">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>6F589623-6160-BE8C-357E-DCC6B553EF7C</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<referredTableLongName>T_PERFIL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2F8D430D-3A23-E0F9-3224-4306AAD861BC</referredTableID>
+<keyObject>45FB3310-F305-5332-BEA6-738D1B735BC4</keyObject>
+<referredKeyID>45FB3310-F305-5332-BEA6-738D1B735BC4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_perfil</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -24,10 +24,10 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_local_segmento" id="4BB8E92E-1058-0046-29E2-9DA84F41A82F">
+<Attribute name="id_segmento" id="4BB8E92E-1058-0046-29E2-9DA84F41A82F">
 <createdBy>josed</createdBy>
 <createdTime>2021-02-24 02:16:10 UTC</createdTime>
 <generatorID>D8D481BE-D050-D599-0BE9-3FF4D28B7121</generatorID>
@@ -38,7 +38,7 @@
 <referedAttribute>A074A91A-B35C-7D53-CEAE-D88F8B95D30B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_usuario" id="3BD62C1E-373E-F65D-9CD3-C8526FE38070">
@@ -52,7 +52,7 @@
 <referedAttribute>AA6A1EDC-F356-39B0-6D5F-6EAF66F8FE76</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nome" id="A0542FAF-7FFF-6AA3-6EA9-185FA05BB8C5">
@@ -65,9 +65,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cep" id="CA75BD7B-5F77-975B-4A04-6CDCFF97DAED">
 <createdBy>josed</createdBy>
@@ -118,7 +118,7 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
@@ -188,7 +188,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_cadastro" id="3CF4198E-6D6F-822C-FEF5-707106A3C333">
 <createdBy>josed</createdBy>
@@ -209,8 +210,9 @@
 <createdBy>josed</createdBy>
 <createdTime>2021-02-24 01:52:48 UTC</createdTime>
 <ownerDesignName>smart_commerce</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

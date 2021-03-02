@@ -24,7 +24,7 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_usuario" id="2B7FF8EE-AE04-0F57-E241-349BDACE6554">
@@ -38,7 +38,7 @@
 <referedAttribute>AA6A1EDC-F356-39B0-6D5F-6EAF66F8FE76</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_ultimo_acesso" id="A1C26605-8BFC-897E-F2D0-5A0789D09439">
@@ -79,8 +79,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -88,8 +88,9 @@
 <createdBy>josed</createdBy>
 <createdTime>2021-02-24 01:21:57 UTC</createdTime>
 <ownerDesignName>smart_commerce</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="true"/>
+<item key="3950553E-BA81-DE3C-FAEB-D41344484656" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,43 +1,30 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E192AAC7-167D-8E51-1719-968C639831A4" name="T_LOCAL_LOCAL_PRODUTO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9CEC6FD0-202C-F882-8CE0-08F584CA7ABD" name="T_USUARIO_PERFIL">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
-<generatorID>A84D106B-69DC-62D8-A212-17A0A45EB9DB</generatorID>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>8F75C001-B503-6630-5959-FF946ACB50AC</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_local_local_produto" id="6B8E7DB2-5497-A98A-A629-775B67B4ABD4">
+<Column name="id_usuario_perfil" id="C30FAF1F-CD74-F9B3-FD72-E9236773BE2F">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
-<generatorID>2DEFFB8A-0D3A-0E85-2DC2-4BAD4FBC5F0B</generatorID>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>CCD1B572-4065-A3CF-B3D6-0511CCED16F2</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="T_LOCAL_id_local" id="A9DF8C5F-3E3C-D080-DB93-015D8DF1D542">
+<Column name="T_PERFIL_id_perfil" id="FBF806B1-C2DF-AFA9-FF13-82A6A52ECA0E">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
-<generatorID>631EAE95-A9E2-70CE-346F-DFA94D21117F</generatorID>
-<ownerDesignName>smart_commerce</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8B86D63B-8FDA-10DD-5A86-5F9B9A909B92" referredColumn="46F40113-76A8-EF14-DC3B-921329AF7824"/>
-</associations>
-</Column>
-<Column name="T_LOCAL_PRODUTO_id_local_produto" id="F99AA51E-349D-7D09-EE06-D817AB094CED">
-<createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
-<generatorID>D9B414F1-2621-FEC9-D2F4-0637513A0820</generatorID>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>807D077F-7C1D-9577-1093-D077FC635B57</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,13 +33,28 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="0BFF99A6-DD0E-FB2B-3B37-6D9011C80AC9" referredColumn="AF718D8B-1F09-1BD0-F3F4-2AD14ED840E5"/>
+<colAssociation fkAssociation="78C26024-422C-ECDB-4334-6AD731E07C1B" referredColumn="017EDDC2-B859-9AD7-D81D-640626E6376F"/>
 </associations>
 </Column>
-<Column name="data_cadastro" id="9544F60F-2ABF-401F-7844-3AE4C9195B0C">
+<Column name="T_USUARIO_id_usuario" id="A4091F88-2711-20B3-D424-6E05AA6C4E05">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
-<generatorID>CC8F750E-5D7E-FACA-B44D-3BA64C40B6DD</generatorID>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>70284D84-D8E9-DA83-CA53-76CB595B5EAF</generatorID>
+<ownerDesignName>smart_commerce</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B7D4143-B571-6B12-2F93-B94A88BA8475" referredColumn="577E2410-0EF2-4DAA-864C-7D817A0FB940"/>
+</associations>
+</Column>
+<Column name="data_cadastro" id="DA7FC018-831C-D82B-8306-C6E3BE4E70F1">
+<createdBy>josed</createdBy>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>BA68E627-4905-DE12-B99E-E2D848B3A316</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,38 +65,38 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B5F912C2-F9CD-9F19-47B3-AE4D38DFD73F" name="T_LOCAL_LOCAL_PRODUTO_PK">
+<ind_PK_UK id="6CBEB670-233E-3EFF-D16C-74F0D6CEF981" name="T_USUARIO_PERFIL_PK">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
-<generatorID>9416C345-6532-8898-D96F-417757060500</generatorID>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>98C80B6A-F90D-400B-0B18-1660057AF1A1</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6B8E7DB2-5497-A98A-A629-775B67B4ABD4"/>
+<colUsage columnID="C30FAF1F-CD74-F9B3-FD72-E9236773BE2F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3B19821E-F059-4178-1657-158433A668E2" name="T_LOCAL_LOCAL_PRODUTO_T_LOCAL_FK">
+<ind_PK_UK id="3B453B28-96E9-EAE2-2BD6-342CC39922B0" name="T_USUARIO_PERFIL_T_PERFIL_FK">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
-<generatorID>ADFD899A-47FD-628D-69D5-B2EC54C851CF</generatorID>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>6F589623-6160-BE8C-357E-DCC6B553EF7C</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A9DF8C5F-3E3C-D080-DB93-015D8DF1D542"/>
+<colUsage columnID="FBF806B1-C2DF-AFA9-FF13-82A6A52ECA0E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="20E3813E-E1E3-5C54-DB49-B9F5A59519E4" name="T_LOCAL_LOCAL_PRODUTO_T_LOCAL_PRODUTO_FK">
+<ind_PK_UK id="20823E17-53CC-B930-5686-1AB8148C8D1A" name="T_USUARIO_PERFIL_T_USUARIO_FK">
 <createdBy>josed</createdBy>
-<createdTime>2021-03-01 02:51:26 UTC</createdTime>
-<generatorID>3CF1A1FA-9B35-DD4A-5289-14667252B7B2</generatorID>
+<createdTime>2021-03-02 02:09:14 UTC</createdTime>
+<generatorID>35DC37D3-4F21-2F5D-D402-58FA76C751D7</generatorID>
 <ownerDesignName>smart_commerce</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F99AA51E-349D-7D09-EE06-D817AB094CED"/>
+<colUsage columnID="A4091F88-2711-20B3-D424-6E05AA6C4E05"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
