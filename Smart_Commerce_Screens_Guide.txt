@@ -22,7 +22,7 @@ Pesquisas
  - Votações mais importantes nas regiões
  - Produtos mais requisitados
 
-Página empresa
+Página empresa(local)
  - Nome centralizado da empresa
  - Foto do logotipo no centro
  - Identificador para empresa novata ou conhecida
