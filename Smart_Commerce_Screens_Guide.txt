@@ -13,7 +13,7 @@ Inicial
   - Inicial
   - Pesquisar
   - Mapa
-  - (Caso empresa: resumo de suas votações)
+  X - (Caso empresa: resumo de suas votações)
 
 Pesquisas
  - Cards com sugestões por categorias
@@ -27,7 +27,7 @@ Página empresa(local)
  - Foto do logotipo no centro
  - Identificador para empresa novata ou conhecida
  - Descrição breve da empresa
- - Botão votar (com uma quantidade de votações dentro)
+ - Botão v otar (com uma quantidade de votações dentro)
  - Sugestões de produtos em uma lista expandível
  - Lista horizontal com categorias
  - Avaliações dos usuários
