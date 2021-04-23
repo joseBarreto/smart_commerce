@@ -70,6 +70,7 @@ namespace SmartCommerce.Application
                 c.IncludeXmlComments(xmlPath);
             });
             #endregion
+            
             //services.AddSingleton(new MapperConfiguration(config =>
             //{
             //    config.CreateMap<CreateUserModel, User>();

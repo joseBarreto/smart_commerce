@@ -1,9 +1,10 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SmartCommerce.Domain.Entities
 {
-    [Table("TB_USUARIO")]
+    [Table("T_USUARIO")]
     public class Usuario : BaseEntity
     {
         [Column("ID_USUARIO")]
@@ -16,9 +17,10 @@ namespace SmartCommerce.Domain.Entities
         public string Sobrenome { get; set; }
 
         [Column("DATA_CADASTRO")]
-        public DateTime DataCadastro { get; set; }
+        public DateTime? DataCadastro { get; set; }
 
         [Column("STATUS")]
-        public char Status { get; set; }
+        public char? Status { get; set; }
+
     }
 }

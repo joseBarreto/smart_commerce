@@ -4,5 +4,67 @@
         <name>SmartCommerce.Application</name>
     </assembly>
     <members>
+        <member name="T:SmartCommerce.Application.Controllers.BaseController">
+            <summary>
+            Clase base das controllers
+            </summary>
+        </member>
+        <member name="M:SmartCommerce.Application.Controllers.BaseController.Execute(System.Func{System.Object})">
+            <summary>
+            Executa uma function 
+            </summary>
+            <param name="func">função para execução</param>
+            <returns>Ok para sucesso e BadRequest para erros</returns>
+        </member>
+        <member name="T:SmartCommerce.Application.Controllers.UsuarioController">
+            <summary>
+            Controle de usuários 
+            </summary>
+        </member>
+        <member name="F:SmartCommerce.Application.Controllers.UsuarioController._baseUserService">
+            <summary>
+            Serviço de Usuário
+            </summary>
+        </member>
+        <member name="M:SmartCommerce.Application.Controllers.UsuarioController.#ctor(SmartCommerce.Domain.Interfaces.IBaseService{SmartCommerce.Domain.Entities.Usuario})">
+            <summary>
+            Ctr
+            </summary>
+            <param name="baseUserService"></param>
+        </member>
+        <member name="M:SmartCommerce.Application.Controllers.UsuarioController.Create(SmartCommerce.Domain.Entities.Usuario)">
+            <summary>
+            Insere um novo registro
+            </summary>
+            <param name="user">Modelo para inserir</param>
+            <returns>Id do obj</returns>
+        </member>
+        <member name="M:SmartCommerce.Application.Controllers.UsuarioController.Update(SmartCommerce.Domain.Entities.Usuario)">
+            <summary>
+            Atualiza um registro
+            </summary>
+            <param name="user">Usuario com Id para atualização</param>
+            <returns>Modelo atualizado</returns>
+        </member>
+        <member name="M:SmartCommerce.Application.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+            Remove um registro 
+            </summary>
+            <param name="id">Identificador</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartCommerce.Application.Controllers.UsuarioController.Get">
+            <summary>
+            Retorna uma lista de registros
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartCommerce.Application.Controllers.UsuarioController.Get(System.Int32)">
+            <summary>
+            Procura um registro por Id
+            </summary>
+            <param name="id">Identificador unico</param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
