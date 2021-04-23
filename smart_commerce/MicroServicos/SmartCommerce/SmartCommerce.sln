@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{CA30BAC9-5563-428D-BD49-CBE1B3A74B13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{4A09970E-CB65-4BBA-9F0F-15A2F082F847}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Service", "3 - Service", "{6EF386F4-9AE3-465D-97CA-6BCBC1F3190C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{CB4DC2B8-83F5-4F04-8A69-23D26404D1A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{4AB1F8D2-7FF5-4A6D-8381-EBB928DEB3D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCommerce.Domain", "SmartCommerce.Domain\SmartCommerce.Domain.csproj", "{B55D378F-3A8D-49F8-B1ED-DD661C021982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCommerce.Application", "SmartCommerce.Application\SmartCommerce.Application.csproj", "{5FB2B7BE-B37F-402C-A717-17C3F6667BF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCommerce.Service", "SmartCommerce.Service\SmartCommerce.Service.csproj", "{5AB70F3B-F6D7-4795-9997-BEE037251930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCommerce.Infra.Data", "SmartCommerce.Infra.Data\SmartCommerce.Infra.Data.csproj", "{BD20057D-E1AF-4A9A-94AF-79BE835470AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B55D378F-3A8D-49F8-B1ED-DD661C021982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55D378F-3A8D-49F8-B1ED-DD661C021982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55D378F-3A8D-49F8-B1ED-DD661C021982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55D378F-3A8D-49F8-B1ED-DD661C021982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB2B7BE-B37F-402C-A717-17C3F6667BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB2B7BE-B37F-402C-A717-17C3F6667BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB2B7BE-B37F-402C-A717-17C3F6667BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB2B7BE-B37F-402C-A717-17C3F6667BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB70F3B-F6D7-4795-9997-BEE037251930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB70F3B-F6D7-4795-9997-BEE037251930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB70F3B-F6D7-4795-9997-BEE037251930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB70F3B-F6D7-4795-9997-BEE037251930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD20057D-E1AF-4A9A-94AF-79BE835470AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD20057D-E1AF-4A9A-94AF-79BE835470AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD20057D-E1AF-4A9A-94AF-79BE835470AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD20057D-E1AF-4A9A-94AF-79BE835470AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4AB1F8D2-7FF5-4A6D-8381-EBB928DEB3D5} = {CB4DC2B8-83F5-4F04-8A69-23D26404D1A9}
+		{B55D378F-3A8D-49F8-B1ED-DD661C021982} = {4A09970E-CB65-4BBA-9F0F-15A2F082F847}
+		{5FB2B7BE-B37F-402C-A717-17C3F6667BF3} = {CA30BAC9-5563-428D-BD49-CBE1B3A74B13}
+		{5AB70F3B-F6D7-4795-9997-BEE037251930} = {6EF386F4-9AE3-465D-97CA-6BCBC1F3190C}
+		{BD20057D-E1AF-4A9A-94AF-79BE835470AF} = {4AB1F8D2-7FF5-4A6D-8381-EBB928DEB3D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF797E61-F879-4D56-9449-C3F5AF682FF0}
+	EndGlobalSection
+EndGlobal

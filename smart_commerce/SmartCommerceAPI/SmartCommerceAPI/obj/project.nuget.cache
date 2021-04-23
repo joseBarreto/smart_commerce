@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yi/XWhf2mCJEgfEpL+CXqjRgSMjQgaXvaOQ4lkCW8c9lVsGn64+/v3/MPYI6XtgUTH4IB48EdLz5N+BWcjGBUw==",
+  "dgSpecHash": "xu9nQyAOIEAVfXe8hPjOH48tlTOrh7XoEatUjK7NtZcbu3Zk/cJi03sPKGgZbQ5mog3H579lXXY+vNSeTBTBYA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\SmartCommerceAPI\\SmartCommerceAPI\\SmartCommerceAPI.csproj",
+  "projectFilePath": "D:\\Projetos\\FIAP\\smart_commerce\\smart_commerce\\SmartCommerceAPI\\SmartCommerceAPI\\SmartCommerceAPI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
