@@ -1,13 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\Projetos\FIAP\smart_commerce\smart_commerce\MicroServicos\SmartCommerce\SmartCommerce.Application\SmartCommerce.Application.xml</DocumentationFile>
+    <DocumentationFile>.\SmartCommerce.Application.xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+	  <Content Include="SmartCommerce.Application.xml">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.13" />
@@ -27,6 +32,10 @@
     <ProjectReference Include="..\SmartCommerce.Domain\SmartCommerce.Domain.csproj" />
     <ProjectReference Include="..\SmartCommerce.Infra.Data\SmartCommerce.Infra.Data.csproj" />
     <ProjectReference Include="..\SmartCommerce.Service\SmartCommerce.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="SmartCommerce.Application.xml" />
   </ItemGroup>
 
 
