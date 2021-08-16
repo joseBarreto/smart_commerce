@@ -9,3 +9,5 @@ Nesta implementação, aplicamos todos os métodos padrão (GET, POST, PUT e DEL
 Criamos uma API RESTfull em ASP.NET Core 3.1 e implementamos o deploy automatizado com Git Actions para dentro dos serviços Azure (Núvem Microsoft). Como diferencial implementamos uma arquitetura de Back-End baseada em DDD (Domain Drive Design)
 
 [WEB API](https://github.com/joseBarreto/smart_commerce_back.git)
+
+[Mobile (Android/iOS)](https://github.com/andrelara2002/smart_commerce_mobile)
